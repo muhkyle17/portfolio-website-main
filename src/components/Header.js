@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 // import components
-import Logo from '../assets/img/logo.svg';
-import Nav from '../components/Nav';
-import NavMobile from '../components/NavMobile';
-import Socials from './Socials';
+import Logo from '../assets/img/logo.svg'
+import Nav from '../components/Nav'
+import NavMobile from '../components/NavMobile'
+import Socials from './Socials'
 
 const Header = () => {
-  const [bg, setBg] = useState(false);
+  const [bg, setBg] = useState(false)
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      return window.scrollY > 50 ? setBg(true) : setBg(false);
-    });
-  });
+      return window.scrollY > 50 ? setBg(true) : setBg(false)
+    })
+  })
 
   return (
     <header
@@ -40,7 +40,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
