@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-lone-blocks */
+import React, { useState, useEffect } from 'react'
 
 // import link
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll'
 // import icon
-import { ChevronUpIcon } from '@heroicons/react/outline';
+import { ChevronUpIcon } from '@heroicons/react/outline'
 
 const BackTopBtn = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      return window.scrollY > 600 ? setShow(true) : setShow(false);
-    });
-  });
+      return window.scrollY > 600 ? setShow(true) : setShow(false)
+    })
+  })
   const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
   {
     return (
       show && (
@@ -25,8 +26,8 @@ const BackTopBtn = () => {
           <ChevronUpIcon className='w-6 h-6' />
         </button>
       )
-    );
+    )
   }
-};
+}
 
-export default BackTopBtn;
+export default BackTopBtn
